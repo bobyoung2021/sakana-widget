@@ -1,0 +1,55 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sakana-widget {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 480px; */
+  /* max-height: 480px; */
+}
+
+/* 確保 widget wrapper 和內容居中 */
+#sakana-widget .sakana-widget-wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 让整个widget上升60px */
+.sakana-widget-app {
+  margin-top: -60px !important;
+}
+
+/* 让自定义图片更贴合 480x480 设备：不裁切、居中、保留透明背景并加轻微阴影 */
+/* .sakana-widget-img,
+#sakana-widget .sakana-widget-img,
+#sakana-widget img,
+.sakana-widget img {
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.28));
+} */
